@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+ /*リセットCSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.commic-data {
+  margin-bottom: 20px; /* 各 commic-data の下に余白を設定 */
+  padding: 10px; /* 各 commic-data の内側にパディングを設定 */
+  border: 1px solid #ddd; /* ボーダーを追加 */
+}
+
+.commic-data img {
+  max-width: 100%; /* 画像が親要素をはみ出さないようにする */
+  height: auto; /* アスペクト比を保持しつつ、高さを自動調整 */
+}

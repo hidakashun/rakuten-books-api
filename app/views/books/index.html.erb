@@ -1,10 +1,14 @@
-<%= link_to "search",new_book_path %>
-
-<% @books.each do |book| %>
-  <div class="commic-data">
-    <%= link_to (image_tag(book.medium_image_url)), book.item_url %>
-    <%= book.title %>
-    <%= book.sales_date %>
-    <%= book.isbn%>
+<div class="container">
+  <div class="text-center">
+    <%= link_to "search", new_book_path %>
   </div>
-<% end %>
+
+  <% @books.each do |book| %>
+    <div class="commic-data">
+      <%= link_to(image_tag(book.medium_image_url), book.item_url) %>
+      <h4><%= book.title %></h4>
+      <p><%= book.sales_date %></p>
+      <p><%= book.isbn %></p>
+    </div>
+  <% end %>
+</div>
